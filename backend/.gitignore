@@ -1,0 +1,9 @@
+# private keys
+config.py
+account_key.json
+
+__pycache__
+.DS_store
+
+# data file
+database_init/data.json

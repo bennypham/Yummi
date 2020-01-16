@@ -1,0 +1,24 @@
+.paper {
+  margin-Top: 78px;
+  max-width: 75%;
+  -ms-transform: translateY(25%);
+  transform: translateY(25%);
+  -ms-transform: translateX(18%);
+  transform: translateX(18%);
+  display: 'flex';
+  flex-direction: 'column';
+  align-Items: 'center';
+}
+
+/* .avatar {
+  margin: 8px;
+  background-color: red;
+} */
+
+.form {
+  width: '100%';
+  margin-top: 8px;
+}
+.submit {
+  margin: 3px 0px 2px;
+}

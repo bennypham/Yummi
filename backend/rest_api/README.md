@@ -1,0 +1,1 @@
+To run the server, type "python server.py"

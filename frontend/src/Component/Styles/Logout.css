@@ -1,0 +1,13 @@
+.logged-out-text {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+.logged-out {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+}

@@ -1,0 +1,18 @@
+.center {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    display: none;
+}
+
+
+.big-avatar {
+    width: 90px;
+    height: 90px;
+}
+
