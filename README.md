@@ -1,6 +1,9 @@
+## Images
+
+
 ## Getting Started
 
-### Website: http://yummmi.herokuapp.com/
+### [Visit the Website!](http://yummmi.herokuapp.com/)
 
 ### Installation
 
