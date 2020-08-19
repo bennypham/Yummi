@@ -37,13 +37,17 @@
     text-shadow: 0px 0px 8px rgb(0, 0, 0);
 }
 
+.HeroGroup a:link {
+    color: white;
+}
+
 /* visited link */
 .HeroGroup a:visited {
-    color: rgba(255, 255, 255, 0);
+    color: white;
 }
 
 /* selected link */
 .HeroGroup a:active {
-    color: rgba(255, 255, 255, 0);
+    color: white;
 }
 
