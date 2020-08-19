@@ -1,5 +1,12 @@
 ## Images
+Displays home feed of all recipes
+<img src="frontend/src/Images/home_feed.png">
 
+Users are able to add their own recipe
+<img src="frontend/src/Images/create_new_recipe.png">
+
+Users can look at the recipes' info
+<img src="frontend/src/Images/recipe_info.png">
 
 ## Getting Started
 
