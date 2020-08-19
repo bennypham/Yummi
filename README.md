@@ -1,5 +1,7 @@
 ## Getting Started
 
+### Website: http://yummmi.herokuapp.com/
+
 ### Installation
 
 1. Clone the repo into your desired location using `git clone https://github.com/CS-UCR/final-project-yummi.git`
