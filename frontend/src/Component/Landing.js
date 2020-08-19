@@ -9,9 +9,9 @@ const Landing = () => (
                 <h1>Yummi it.</h1>
             </div>
             <h1 className="HeroGroupText">Find all the recipes you need with just a click.</h1>
-            <p className="HeroGroupText2">All your recipes are within reach</p>
-            <Link  href="/recipe/random">
-                <p className="HeroGroupText2">I'm Feeling Hungry!</p>
+            {/* <p className="HeroGroupText2">All your recipes are within reach</p> */}
+            <Link  href="/signup">
+                <h2 className="HeroGroupText2">Click to Sign Up</h2>
             </Link>
         </div>
     </div>

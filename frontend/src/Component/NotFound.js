@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
 import './Styles/NotFound.css'
 
 export default class NotFound extends Component {

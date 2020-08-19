@@ -1,6 +1,4 @@
 import React from "react";
-import {ResponsivePie} from "@nivo/pie";
-import { ResponsiveBar } from '@nivo/bar';
 import ObesityLine from './ChartComponents/ObesityLine';
 import MacrosPie from "./ChartComponents/MacrosPie";
 import ObesityAgeBar from "./ChartComponents/ObesityAgeBar";

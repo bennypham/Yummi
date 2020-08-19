@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {storage} from '../Firebase/firebase';
 import { withFirebase } from '../Firebase';
 import { AuthUserContext } from '../Session';
 import { Link } from 'react-router-dom';
@@ -35,7 +34,7 @@ class Profile extends Component {
     getUserName() {
         var user = this.props.firebase.getCurrentUser()
 
-        if(this.state.firstName == '') {
+        if(this.state.firstName === '') {
             if (user) {
                 let userId = user.uid
                 var userName = this.props.firebase.database.ref('/users/' + userId);
@@ -54,7 +53,7 @@ class Profile extends Component {
     getProfilePic() {
         var user = this.props.firebase.getCurrentUser()
         console.log(user);
-        if (this.state.firstName == '') {
+        if (this.state.firstName === '') {
             if (user) {
                 let userId = user.uid
                 var userName = this.props.firebase.storage.ref('images/' + userId);
