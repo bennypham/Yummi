@@ -1,3 +1,5 @@
+### [Visit the Website!](http://yummmi.herokuapp.com/)
+
 ## Images
 Displays home feed of all recipes
 <img src="frontend/src/Images/home_feed.png">
@@ -9,8 +11,6 @@ Users can look at the recipes' info, leave a rating, and comment
 <img src="frontend/src/Images/recipe_info.png">
 
 ## Getting Started
-
-### [Visit the Website!](http://yummmi.herokuapp.com/)
 
 ### Installation
 
