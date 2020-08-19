@@ -5,7 +5,7 @@ Displays home feed of all recipes
 Users are able to add their own recipe
 <img src="frontend/src/Images/create_new_recipe.png">
 
-Users can look at the recipes' info
+Users can look at the recipes' info, leave a rating, and comment
 <img src="frontend/src/Images/recipe_info.png">
 
 ## Getting Started
