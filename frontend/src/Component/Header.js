@@ -1,8 +1,5 @@
 import React from 'react';
 import LogOutButton from './LogOutButton';
-import Profile from './Profile';
-import Documentation from './Documentation';
-import healthydiet from "./HealthyDiet";
 import { AuthUserContext } from '../Session';
 import { withRouter } from 'react-router-dom';
 import { withFirebase } from '../Firebase';
@@ -11,7 +8,7 @@ import { withFirebase } from '../Firebase';
 import clsx from 'clsx';
 import FormRecipe from './FormRecipe';
 import { makeStyles, fade, useTheme } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, IconButton, Link } from '@material-ui/core/';
+import { AppBar, Toolbar, Typography, IconButton } from '@material-ui/core/';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import InputBase from '@material-ui/core/InputBase';
@@ -29,8 +26,6 @@ import HomeIcon from '@material-ui/icons/Home';
 import { useState, useEffect } from 'react';
 import DescriptionIcon from '@material-ui/icons/Description';
 import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
-
-var request = require('request');
 
 const drawerWidth = 240;
 
@@ -131,8 +126,6 @@ function ListItemLink(props) {
 function ButtonAppBar(props) {
     const classes = useStyles();
     const theme = useTheme();
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const openMenu = Boolean(anchorEl);
     const [open, setOpen] = useState(false);
 
     const handleDrawerOpen = () => {
@@ -143,13 +136,6 @@ function ButtonAppBar(props) {
         setOpen(false);
     };
 
-    const handleMenu = event => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
 
     const makeQuery = (e) => {
         if (e.keyCode === 13) {

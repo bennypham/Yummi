@@ -1,17 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles({
-  root: {
-    width: "100%",
-    maxWidth: 600,
-  }
-});
 
 export default function Types() {
-  const classes = useStyles();
-
   return (
     <div className="documentation">
       <Typography variant="h4" gutterBottom>
@@ -21,6 +11,7 @@ export default function Types() {
         Here you have detailed documentation of all available API functions.
       </Typography>
       <Typography variant="subtitle2" gutterBottom>
+        The backend server code found in the Github repository must be running, Yummi demos may not have this.
         To get started, you can make the sample request for each endpoint.
       </Typography>
       <Typography variant="button" display="block" gutterBottom>

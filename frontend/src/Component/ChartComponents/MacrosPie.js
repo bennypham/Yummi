@@ -1,6 +1,5 @@
 import React from "react";
 import {ResponsivePie} from "@nivo/pie";
-import { ResponsiveBar } from '@nivo/bar';
 
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and

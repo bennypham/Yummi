@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom';
 import { withFirebase } from '../Firebase';
-import RecipeCard from './RecipeCard'
 import { AuthUserContext } from '../Session';
-import './Styles/Home.css'
 import Filter from './Filter';
-import Modal from '@material-ui/core/Modal';
-import Recipe from './Recipe'
 
 // Material-UI Imports
 import GridList from '@material-ui/core/GridList';
@@ -14,6 +10,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
+import './Styles/Home.css'
 
 const mealtypes = ["Breakfast", "Brunch", "Lunch", "Supper", "Dinner", "Snack"];
 
@@ -35,6 +32,7 @@ const allergies = [
   "Fish",
   "Gluten",
 ];
+
 class HomeComponent extends Component {
         constructor(props) {
             super(props);
@@ -156,7 +154,7 @@ class HomeComponent extends Component {
                             <div className="gridlist" cols={3.5}>
                                 {this.state.trendingRecipes.map((item, i) => (
                                     <GridListTile onClick={() => this.props.history.push('/recipe/' + item.key)} key={i} recipe={item}>
-                                        <img src={item.image} /*alt={item.title}*/ />
+                                        <img src={item.image} alt={item.title} />
                                         <GridListTileBar
                                             className="titleBar"
                                             title={item.title}
@@ -169,27 +167,26 @@ class HomeComponent extends Component {
                                     </GridListTile>
                                 ))}
                             </div>
-                        <ul className="filter">
-                            <li>  <Filter names={mealtypes} title={"Meal Types"} parentSelected={this.selectionHandler} index={0} /> </li>
-                            <li> <Filter names={diets} title={"Diets"} parentSelected={this.selectionHandler} index={1} /> </li>
-                            <li> <Filter names={allergies} title={"Allergies"} parentSelected={this.selectionHandler} index={2} /> </li>
-                        </ul>
-                        </div>
-                    <GridList cellHeight={180} className="gridlistvert">
+                            
+                    </div>
+                    <ul className="filter">
+                        <li>  <Filter names={mealtypes} title={"Meal Types"} parentSelected={this.selectionHandler} index={0} /> </li>
+                        <li> <Filter names={diets} title={"Diets"} parentSelected={this.selectionHandler} index={1} /> </li>
+                        <li> <Filter names={allergies} title={"Allergies"} parentSelected={this.selectionHandler} index={2} /> </li>
+                    </ul>
+                    <GridList cellHeight={180}>
                         {this.state.recipes.map((item, key) => (
                             <GridListTile onClick={() => this.props.history.push('/recipe/' + item.key)} key={key}>
-                                <img src={item.image} /*alt={tile.title}*/ />
+                                <img src={item.image} alt={item.title} />
                                 <GridListTileBar
                                     title={item.title}
                                     actionIcon={
-                                        <IconButton aria-label={`info about ${item.title}`}>
-                                            {/* <InfoIcon /> */}
-                                        </IconButton>
+                                        <IconButton aria-label={`info about ${item.title}`} />
                                     }
                                 />
                             </GridListTile>
                         ))}
-                        </GridList>
+                    </GridList>
                     </div>
                         :
                         <div>
