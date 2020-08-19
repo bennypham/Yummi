@@ -14,9 +14,9 @@ Users can look at the recipes' info, leave a rating, and comment
 
 ### Installation
 
-1. Clone the repo into your desired location using `git clone https://github.com/CS-UCR/final-project-yummi.git`
+1. Clone the repo into your desired location using `git clone https://github.com/bennypham/Yummi.git`
 
-2. Run `npm install` command in the root directory which in this case is in the `final-project-yummi/frontend` to install all the necessary packages
+2. Run `npm install` command in the `frontend` directory to install all the necessary packages
 
 ### How to run our project
 
