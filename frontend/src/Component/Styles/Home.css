@@ -20,7 +20,7 @@
 .MuiGridListTile-root {
     box-sizing: border-box;
     flex-shrink: 0;
-    max-width: 22%;
+    max-width: 25%;
 }
 
 .titleBar {
@@ -41,4 +41,8 @@
     color: black;
     text-align: center;
     font-weight: 400;
+}
+
+#id {
+    padding-left: 10%;
 }

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom';
 import { withFirebase } from '../Firebase';
 import { AuthUserContext } from '../Session';
-import './Styles/Home.css'
 import Filter from './Filter';
 
 // Material-UI Imports
@@ -11,6 +10,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
+import './Styles/Home.css'
 
 const mealtypes = ["Breakfast", "Brunch", "Lunch", "Supper", "Dinner", "Snack"];
 
@@ -174,7 +174,7 @@ class HomeComponent extends Component {
                         <li> <Filter names={diets} title={"Diets"} parentSelected={this.selectionHandler} index={1} /> </li>
                         <li> <Filter names={allergies} title={"Allergies"} parentSelected={this.selectionHandler} index={2} /> </li>
                     </ul>
-                    <GridList cellHeight={180} className="gridlistvert">
+                    <GridList cellHeight={180}>
                         {this.state.recipes.map((item, key) => (
                             <GridListTile onClick={() => this.props.history.push('/recipe/' + item.key)} key={key}>
                                 <img src={item.image} alt={item.title} />
